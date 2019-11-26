@@ -4,5 +4,5 @@
 #EXPOSE 8080
 #CMD ["java","-Djava.security.egd=file:/dev/./urandom", "-jar","/app.jar"]
 
-FROM tomcat:9:0
+FROM tomcat:9.0
 COPY target/*.war /usr/local/tomcat/webapps/
