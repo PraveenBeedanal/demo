@@ -6,3 +6,4 @@
 
 FROM tomcat:9.0
 COPY target/*.war /usr/local/tomcat/webapps/
+CMD ["java","-Djava.security.egd=file:/dev/./urandom", "-jar","/usr/local/tomcat/webapps/*.war"]
